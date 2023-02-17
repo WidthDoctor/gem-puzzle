@@ -1,0 +1,118 @@
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+.visible{
+    visibility: visible;
+    opacity: 1;
+}
+.field{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 220.500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cell{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 50px;
+    transition: all 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.victory{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 100px;
+    position: absolute;
+    color: rgba(34, 154, 158, 0.479);
+    background: rgb(255, 126, 126);
+    font-size: 50px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.victoryBtn{
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.victoryBtn:hover{
+    border: 2px solid blue;
+}
+.victoryBtn:hover:active{
+  transform: scale(0.99); /* Equal to scaleX(0.7) scaleY(0.7) */
+  background-color: pink;
+}
+/*TODO Menu Pause*/
+.menu{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 100px;
+    position: absolute;
+    color: rgba(34, 154, 158, 0.479);
+    background: rgb(255, 126, 126);
+    font-size: 50px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.menuBtn{
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.menuBtn:hover{
+    border: 2px solid blue;
+}
+.menuBtn:hover:active{
+  transform: scale(0.99); /* Equal to scaleX(0.7) scaleY(0.7) */
+  background-color: pink;
+}
+
+/*TODO TIMER*/
+.timer{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btnPause{
+    margin-left: 44%;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btnPause:hover{
+    border: 2px solid blue;
+}
+
+button:active, button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
